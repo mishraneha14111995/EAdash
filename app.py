@@ -9,10 +9,7 @@ st.set_page_config(page_title="HR Analytics Dashboard", layout="wide")
 
 # Load the dataset
 @st.cache_data
-def load_data():
-    return pd.read_csv("EA.csv")
-
-df = load_data()
+df= pd.read_csv("EA.csv")
 
 # Sidebar Filters
 st.sidebar.header("Filter Data")
